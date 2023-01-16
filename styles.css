@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container{
+  display: flex;
+}
+
+section{
+  display: flex;
+  align-items: flex-start;
+  background-image: url(./olena-sergienko-r0M9HrfJMBM-unsplash.jpg);
+  background-size: cover;
+  width: 35vw;
+  height: 100vh;
+}
+
+img{
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 25%;
+}
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  height: 100vh;
+}
+
+.description{
+  background-color: rgb(251, 252, 254);
+  padding: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+h1{
+  padding: 10px 20px;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px;
+  margin: 10px 50px;
+}
+
+label{
+  padding-top: 10px;
+}
+input{
+  padding: 10px 10px;
+
+}
+
+button{
+  margin-top: 15px;
+  padding: 10px 10px;
+}
+
+button:hover{
+  cursor: pointer;
+  font-weight: bold;
+  background-color: lightblue;
+}
+
+footer{
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media(max-width: 800px){
+  .container{
+    flex-direction: column;
+  }
+  section{
+    width: 100%;
+  }
+
+  .right-side{
+    width: 100%;
+  }
+}
